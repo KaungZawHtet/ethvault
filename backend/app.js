@@ -12,7 +12,7 @@ require('dotenv').config();
 
 // Enable CORS for all routes
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3001'], // Allow Next.js frontend
+  origin: ['http://localhost:3000', 'http://localhost:3001'], // Allow Next.js frontend. Normally, we tend to keep these origin value in env var
   credentials: true
 }));
 
