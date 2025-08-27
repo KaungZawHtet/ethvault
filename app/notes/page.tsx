@@ -183,13 +183,7 @@ export default function NotesPage() {
       <div className="bg-white shadow-md rounded px-8 pt-6 pb-8">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-semibold">All Notes ({notes.length})</h2>
-          <button
-            onClick={fetchNotes}
-            disabled={loading}
-            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded disabled:opacity-50"
-          >
-            {loading ? 'Loading...' : 'Refresh'}
-          </button>
+
         </div>
 
         {notes.length === 0 ? (
